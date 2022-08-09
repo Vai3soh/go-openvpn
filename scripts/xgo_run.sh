@@ -7,7 +7,7 @@ if [ -z "$COMMAND" ]; then
     exit 1
 fi
 
-docker run -it --rm \
+docker run -it --rm --user 1000:1000 \
     -v $PWD:/go-src-root/ \
     -v $PWD:/go/src/github.com/mysteriumnetwork/go-openvpn \
     -w /go/src/github.com/mysteriumnetwork/go-openvpn \

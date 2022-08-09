@@ -1,3 +1,7 @@
+dep_dir/*
+core/*
+dls/*
+.vscode/*
 /vendor
 /build
 .idea/
